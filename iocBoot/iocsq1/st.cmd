@@ -1,0 +1,19 @@
+# ../../bin/${EPICS_HOST_ARCH}/sq1 st.cmd
+< envPaths
+
+epicsEnvSet("PREFIX", "sq1:")
+
+dbLoadDatabase("../../dbd/iocsq1Linux.dbd")
+iocsq1Linux_registerRecordDeviceDriver(pdbbase)
+
+# Add IP address of Windows machine
+epicsEnvSet("EPICS_CA_ADDR_LIST", "164.54.60.205")
+
+dbLoadRecords("./sq1.db", "P=$(PREFIX)")
+
+###############################################################################
+iocInit
+###############################################################################
+
+# print the time our boot was finished
+date
