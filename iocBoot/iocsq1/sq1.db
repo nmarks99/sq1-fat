@@ -51,3 +51,24 @@ record(bi, "$(P)RobotCloseApproachStatus")
     field(DTYP, "Raw Soft Channel")
     field(INP, "26IDRobot:CAPStatus CP")
 }
+
+record(mbbo,"$(P)Command")
+{
+    field(ZRST, "Move")
+    field(ONST, "Cancel")
+    field(TWST, "Pause")
+    field(THST, "Resume")
+    field(FRST, "Home")
+    field(FVST, "Initialize")
+    field(SXST, "Cap")
+    field(SVST, "Cap Release")
+    field(EIST, "Cap Cartesian")
+    field(FLNK, "$(P)CommandCalcLua.PROC")
+}
+
+record(luascript, "$(P)CommandCalcLua")
+{
+    field(INPA, "$(P)Command.VAL")
+    field(CODE, "@sq1.lua get_command_string()")
+    field(OUT, "26IDRobot:CMD CP")
+}

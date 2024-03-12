@@ -1,21 +1,21 @@
 
 file {
-	name="fat.adl"
+	name="/home/beams0/NMARKS/devel/sq1/sq1App/op/adl/fat.adl"
 	version=030111
 }
 display {
 	object {
-		x=2371
-		y=786
-		width=400
-		height=400
+		x=2607
+		y=842
+		width=492
+		height=565
 	}
 	clr=14
 	bclr=4
 	cmap=""
 	gridSpacing=5
-	gridOn=0
-	snapToGrid=0
+	gridOn=1
+	snapToGrid=1
 }
 "color map" {
 	ncolors=65
@@ -87,17 +87,406 @@ display {
 		1a7309,
 	}
 }
-byte {
+oval {
 	object {
-		x=83
-		y=29
-		width=92
-		height=117
+		x=205
+		y=85
+		width=25
+		height=25
 	}
-	monitor {
-		chan="$(P)RobotStatus"
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotOkay"
+	}
+}
+oval {
+	object {
+		x=230
+		y=85
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotOkay"
+	}
+}
+text {
+	object {
+		x=10
+		y=85
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Status"
+}
+oval {
+	object {
+		x=205
+		y=125
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotPower"
+	}
+}
+oval {
+	object {
+		x=230
+		y=125
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotPower"
+	}
+}
+text {
+	object {
+		x=10
+		y=125
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Power"
+}
+oval {
+	object {
+		x=205
+		y=165
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotMotionComplete"
+	}
+}
+oval {
+	object {
+		x=230
+		y=165
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotMotionComplete"
+	}
+}
+text {
+	object {
+		x=10
+		y=165
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Motion complete"
+}
+oval {
+	object {
+		x=205
+		y=205
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotRangeExceeded"
+	}
+}
+oval {
+	object {
+		x=230
+		y=205
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotRangeExceeded"
+	}
+}
+text {
+	object {
+		x=10
+		y=205
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Range exceeded"
+}
+menu {
+	object {
+		x=70
+		y=10
+		width=195
+		height=34
+	}
+	control {
+		chan="$(P)Command"
 		clr=14
 		bclr=4
 	}
-	sbit=1
+}
+text {
+	object {
+		x=5
+		y=15
+		width=75
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Mode:"
+}
+oval {
+	object {
+		x=205
+		y=245
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotEmergencyStop"
+	}
+}
+oval {
+	object {
+		x=230
+		y=245
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotEmergencyStop"
+	}
+}
+text {
+	object {
+		x=10
+		y=245
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Emergency stop"
+}
+oval {
+	object {
+		x=205
+		y=285
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotCollisionSensor"
+	}
+}
+oval {
+	object {
+		x=230
+		y=285
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotCollisionSensor"
+	}
+}
+text {
+	object {
+		x=10
+		y=285
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Collision sensor"
+}
+oval {
+	object {
+		x=205
+		y=325
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotHutchDoor"
+	}
+}
+oval {
+	object {
+		x=230
+		y=325
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotHutchDoor"
+	}
+}
+text {
+	object {
+		x=10
+		y=325
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Hutch door"
+}
+oval {
+	object {
+		x=205
+		y=365
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotRestartPendant"
+	}
+}
+oval {
+	object {
+		x=230
+		y=365
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotRestartPendant"
+	}
+}
+text {
+	object {
+		x=10
+		y=365
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Restart pendant"
+}
+oval {
+	object {
+		x=205
+		y=405
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RobotCloseApproachStatus"
+	}
+}
+oval {
+	object {
+		x=230
+		y=405
+		width=25
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RobotCloseApproachStatus"
+	}
+}
+text {
+	object {
+		x=10
+		y=405
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Close approach"
 }

@@ -2,6 +2,7 @@
 < envPaths
 
 epicsEnvSet("PREFIX", "sq1:")
+epicsEnvSet("LUA_SCRIPT_PATH", "./lua_scripts")
 
 dbLoadDatabase("../../dbd/iocsq1Linux.dbd")
 iocsq1Linux_registerRecordDeviceDriver(pdbbase)
