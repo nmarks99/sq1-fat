@@ -3,7 +3,7 @@
 export EPICS_APP=`dirname ${BASH_SOURCE:-$0}`
 export EPICS_APP_ADL_DIR=${EPICS_APP}/sq1App/op/adl
 export DEFAULT_UI_FILE=${1:-${DEFAULT_UI_FILE:-fat.adl}}
-export UI_FILE_MACROS=${2:-"P=sq1:"}
+export UI_FILE_MACROS=${2:-"P=sq1:,P1=26IDRobot:"}
 
 source ${EPICS_APP}/setup_epics_common medm
 
@@ -12,7 +12,7 @@ then
     export MEDM_EXEC_LIST='Probe;probe &P &'
 fi
 
-#export EPICS_CA_ADDR_LIST="164.54.53.126"
+export EPICS_CA_ADDR_LIST="164.54.60.205"
 
 # This should agree with the environment variable set by the ioc
 # see 'putenv "EPICS_CA_MAX_ARRAY_BYTES=64008"' in iocBoot/ioc<target>/st.cmd
