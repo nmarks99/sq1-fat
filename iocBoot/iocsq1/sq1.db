@@ -1,59 +1,6 @@
-# record(bi, "$(P)RobotOkay")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:STS CP")
-# }
-#
-# record(bi, "$(P)RobotPower")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:RP CP")
-# }
-#
-# record(bi, "$(P)RobotMotionComplete")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:MC CP")
-# }
-#
-# record(bi, "$(P)RobotRangeExceeded")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:RE CP")
-# }
-#
-# record(bi, "$(P)RobotEmergencyStop")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:ES CP")
-# }
-#
-# record(bi, "$(P)RobotCollisionSensor")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:CS CP")
-# }
-#
-# record(bi, "$(P)RobotHutchDoor")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:HD CP")
-# }
-#
-# record(bi, "$(P)RobotRestartPendant")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:RS CP")
-# }
-#
-# record(bi, "$(P)RobotCloseApproachStatus")
-# {
-    # field(DTYP, "Raw Soft Channel")
-    # field(INP, "26IDRobot:CAPStatus CP")
-# }
-
 record(mbbo,"$(P)Command")
 {
+    field(PINI, 1)
     field(ZRST, "Move")
     field(ONST, "Cancel")
     field(TWST, "Pause")
@@ -72,3 +19,11 @@ record(luascript, "$(P)CommandCalcLua")
     field(CODE, "@sq1.lua get_command_string()")
     field(OUT, "26IDRobot:CMD CP")
 }
+
+# if you wanted to do this, note it needs to be
+# Raw Soft Channel
+# record(bi, "$(P)RobotPower")
+# {
+    # field(DTYP, "Raw Soft Channel")
+    # field(INP, "26IDRobot:RP CP")
+# }
