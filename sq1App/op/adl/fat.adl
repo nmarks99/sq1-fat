@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=1792
-		y=739
-		width=718
+		x=1782
+		y=731
+		width=815
 		height=830
 	}
 	clr=14
@@ -990,4 +990,58 @@ text {
 		clr=14
 	}
 	textix="Z_CAP:"
+}
+"text update" {
+	object {
+		x=645
+		y=515
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)TwoTheta"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=645
+		y=555
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)MP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=445
+		y=515
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="TwoTheta:"
+}
+text {
+	object {
+		x=445
+		y=555
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Motion Progress:"
 }
