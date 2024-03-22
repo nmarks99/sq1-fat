@@ -15,12 +15,13 @@ record(mbbo,"$(P)Command")
 
 record(luascript, "$(P)CommandCalcLua")
 {
+    field(PINI, 1)
     field(INPA, "$(P)Command.VAL")
     field(CODE, "@sq1.lua get_command_string()")
     field(OUT, "26IDRobot:CMD CP")
 }
 
-# if you wanted to do this, note it needs to be
+# if you wanted to do this, note DTYP needs to be
 # Raw Soft Channel
 # record(bi, "$(P)RobotPower")
 # {
