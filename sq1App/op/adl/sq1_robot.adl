@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams0/NMARKS/devel/sq1/sq1App/op/adl/fat.adl"
+	name="/home/beams0/NMARKS/devel/sq1-fat/sq1App/op/adl/sq1_robot.adl"
 	version=030111
 }
 display {
 	object {
-		x=1782
-		y=731
-		width=815
-		height=830
+		x=485
+		y=537
+		width=899
+		height=839
 	}
 	clr=14
 	bclr=4
@@ -87,39 +87,9 @@ display {
 		1a7309,
 	}
 }
-oval {
-	object {
-		x=635
-		y=80
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P1)STS"
-	}
-}
-oval {
-	object {
-		x=660
-		y=80
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P1)STS"
-	}
-}
 text {
 	object {
-		x=440
+		x=479
 		y=80
 		width=150
 		height=25
@@ -127,41 +97,12 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Status"
-}
-oval {
-	object {
-		x=635
-		y=120
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P1)RP"
-	}
-}
-oval {
-	object {
-		x=660
-		y=120
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P1)RP"
-	}
+	textix="Status:"
+	align="horiz. right"
 }
 text {
 	object {
-		x=440
+		x=479
 		y=120
 		width=150
 		height=25
@@ -169,54 +110,13 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Power"
+	textix="Power:"
+	align="horiz. right"
 }
 oval {
 	object {
-		x=635
-		y=160
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P1)MC"
-	}
-}
-oval {
-	object {
-		x=660
-		y=160
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P1)MC"
-	}
-}
-text {
-	object {
-		x=440
-		y=160
-		width=150
-		height=25
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Motion complete"
-}
-oval {
-	object {
-		x=635
-		y=200
+		x=675
+		y=155
 		width=25
 		height=25
 	}
@@ -230,8 +130,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=200
+		x=700
+		y=155
 		width=25
 		height=25
 	}
@@ -245,15 +145,16 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=200
+		x=480
+		y=155
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Range exceeded"
+	textix="Range exceeded:"
+	align="horiz. right"
 }
 menu {
 	object {
@@ -265,7 +166,7 @@ menu {
 	control {
 		chan="$(P)Command"
 		clr=14
-		bclr=4
+		bclr=51
 	}
 }
 text {
@@ -282,8 +183,8 @@ text {
 }
 oval {
 	object {
-		x=635
-		y=240
+		x=675
+		y=195
 		width=25
 		height=25
 	}
@@ -297,8 +198,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=240
+		x=700
+		y=195
 		width=25
 		height=25
 	}
@@ -312,20 +213,21 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=240
+		x=480
+		y=195
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Emergency stop"
+	textix="Emergency stop:"
+	align="horiz. right"
 }
 oval {
 	object {
-		x=635
-		y=280
+		x=675
+		y=235
 		width=25
 		height=25
 	}
@@ -339,8 +241,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=280
+		x=700
+		y=235
 		width=25
 		height=25
 	}
@@ -354,20 +256,21 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=280
+		x=480
+		y=235
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Collision sensor"
+	textix="Collision sensor:"
+	align="horiz. right"
 }
 oval {
 	object {
-		x=635
-		y=320
+		x=675
+		y=275
 		width=25
 		height=25
 	}
@@ -381,8 +284,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=320
+		x=700
+		y=275
 		width=25
 		height=25
 	}
@@ -396,20 +299,21 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=320
+		x=480
+		y=275
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Hutch door"
+	textix="Hutch door:"
+	align="horiz. right"
 }
 oval {
 	object {
-		x=635
-		y=360
+		x=675
+		y=315
 		width=25
 		height=25
 	}
@@ -423,8 +327,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=360
+		x=700
+		y=315
 		width=25
 		height=25
 	}
@@ -438,20 +342,21 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=360
+		x=480
+		y=315
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Restart pendant"
+	textix="Restart pendant:"
+	align="horiz. right"
 }
 oval {
 	object {
-		x=635
-		y=400
+		x=675
+		y=355
 		width=25
 		height=25
 	}
@@ -465,8 +370,8 @@ oval {
 }
 oval {
 	object {
-		x=660
-		y=400
+		x=700
+		y=355
 		width=25
 		height=25
 	}
@@ -480,15 +385,16 @@ oval {
 }
 text {
 	object {
-		x=440
-		y=400
+		x=480
+		y=355
 		width=150
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Close approach"
+	textix="Close approach:"
+	align="horiz. right"
 }
 "message button" {
 	object {
@@ -500,7 +406,7 @@ text {
 	control {
 		chan="$(P1)EXE"
 		clr=14
-		bclr=4
+		bclr=51
 	}
 	label="Execute"
 	press_msg="1"
@@ -993,14 +899,14 @@ text {
 }
 "text update" {
 	object {
-		x=645
-		y=515
+		x=589
+		y=530
 		width=150
 		height=25
 	}
 	monitor {
 		chan="$(P1)TwoTheta"
-		clr=14
+		clr=54
 		bclr=4
 	}
 	limits {
@@ -1008,14 +914,14 @@ text {
 }
 "text update" {
 	object {
-		x=645
-		y=555
-		width=150
+		x=810
+		y=10
+		width=60
 		height=25
 	}
 	monitor {
 		chan="$(P1)MP"
-		clr=14
+		clr=54
 		bclr=4
 	}
 	limits {
@@ -1023,25 +929,287 @@ text {
 }
 text {
 	object {
-		x=445
-		y=515
-		width=150
+		x=464
+		y=530
+		width=110
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
 	textix="TwoTheta:"
+	align="horiz. right"
 }
 text {
 	object {
-		x=445
-		y=555
-		width=150
+		x=605
+		y=10
+		width=200
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
 	textix="Motion Progress:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=875
+		y=10
+		width=15
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="%"
+}
+"text update" {
+	object {
+		x=589
+		y=570
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J1_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=589
+		y=600
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J2_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=589
+		y=630
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J3_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=589
+		y=660
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J4_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=589
+		y=690
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J5_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=589
+		y=720
+		width=150
+		height=25
+	}
+	monitor {
+		chan="$(P1)J6_Output"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=534
+		y=570
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J1:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=534
+		y=600
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J2:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=534
+		y=630
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J3:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=534
+		y=660
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J4:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=534
+		y=690
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J5:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=534
+		y=720
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="J6:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=639
+		y=80
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P1)STS"
+	}
+	textix="Okay"
+}
+text {
+	object {
+		x=639
+		y=80
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P1)STS"
+	}
+	textix="Fault"
+}
+text {
+	object {
+		x=639
+		y=120
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P1)RP"
+	}
+	textix="On"
+}
+text {
+	object {
+		x=639
+		y=120
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P1)RP"
+	}
+	textix="Off"
+}
+text {
+	object {
+		x=525
+		y=10
+		width=80
+		height=25
+	}
+	"basic attribute" {
+		clr=50
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P1)MC"
+	}
+	textix="Moving"
 }

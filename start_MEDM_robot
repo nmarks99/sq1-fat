@@ -1,25 +1,13 @@
 #!/bin/bash
 
-export EPICS_APP=`dirname ${BASH_SOURCE:-$0}`
-export EPICS_APP_ADL_DIR=${EPICS_APP}/sq1App/op/adl
-export DEFAULT_UI_FILE=${1:-${DEFAULT_UI_FILE:-fat.adl}}
+##################################################
+
+export EPICS_APP_UI_DIR="sq1App/op/adl"
+export UI_FILE="${EPICS_APP_UI_DIR}/sq1_robot.adl"
 export UI_FILE_MACROS=${2:-"P=sq1:,P1=26IDRobot:"}
 
-source ${EPICS_APP}/setup_epics_common medm
+export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${EPICS_APP_UI_DIR}
+export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${EPICS_APP_UI_DIR}/autoconvert
 
-if [ -z "${MEDM_EXEC_LIST}" ]
-then
-    export MEDM_EXEC_LIST='Probe;probe &P &'
-fi
-
-export EPICS_CA_ADDR_LIST="164.54.60.205"
-
-# This should agree with the environment variable set by the ioc
-# see 'putenv "EPICS_CA_MAX_ARRAY_BYTES=64008"' in iocBoot/ioc<target>/st.cmd
-export EPICS_CA_MAX_ARRAY_BYTES=64008
-
-# export START_PUTRECORDER=${EPICS_APP}/start_putrecorder
-# export MACROS_PY=${EPICS_APP_ADL_DIR}/../python/macros.py
-# export EDITOR=nedit
-
-medm -macro ${UI_FILE_MACROS} -x ${DEFAULT_UI_FILE} &
+# Start medm
+medm -macro ${UI_FILE_MACROS} -x ${UI_FILE} &
