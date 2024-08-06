@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=787
-		y=740
-		width=899
-		height=839
+		x=707
+		y=676
+		width=1041
+		height=901
 	}
 	clr=14
 	bclr=4
@@ -89,7 +89,7 @@ display {
 }
 text {
 	object {
-		x=520
+		x=500
 		y=85
 		width=150
 		height=25
@@ -102,7 +102,7 @@ text {
 }
 text {
 	object {
-		x=520
+		x=500
 		y=125
 		width=150
 		height=25
@@ -113,47 +113,17 @@ text {
 	textix="Power:"
 	align="horiz. right"
 }
-oval {
-	object {
-		x=716
-		y=160
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)RE"
-	}
-}
-oval {
-	object {
-		x=741
-		y=160
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)RE"
-	}
-}
 text {
 	object {
-		x=521
+		x=450
 		y=160
-		width=150
+		width=200
 		height=25
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="Range exceeded:"
+	textix="Range:"
 	align="horiz. right"
 }
 text {
@@ -168,41 +138,11 @@ text {
 	}
 	textix="Mode:"
 }
-oval {
-	object {
-		x=716
-		y=200
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)ES"
-	}
-}
-oval {
-	object {
-		x=741
-		y=200
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)ES"
-	}
-}
 text {
 	object {
-		x=521
+		x=450
 		y=200
-		width=150
+		width=200
 		height=25
 	}
 	"basic attribute" {
@@ -211,41 +151,11 @@ text {
 	textix="Emergency stop:"
 	align="horiz. right"
 }
-oval {
-	object {
-		x=716
-		y=240
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)CS"
-	}
-}
-oval {
-	object {
-		x=741
-		y=240
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)CS"
-	}
-}
 text {
 	object {
-		x=521
+		x=450
 		y=240
-		width=150
+		width=200
 		height=25
 	}
 	"basic attribute" {
@@ -254,39 +164,9 @@ text {
 	textix="Collision sensor:"
 	align="horiz. right"
 }
-oval {
-	object {
-		x=716
-		y=280
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)HD"
-	}
-}
-oval {
-	object {
-		x=741
-		y=280
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)HD"
-	}
-}
 text {
 	object {
-		x=521
+		x=501
 		y=280
 		width=150
 		height=25
@@ -297,41 +177,11 @@ text {
 	textix="Hutch door:"
 	align="horiz. right"
 }
-oval {
-	object {
-		x=716
-		y=320
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)RS"
-	}
-}
-oval {
-	object {
-		x=741
-		y=320
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)RS"
-	}
-}
 text {
 	object {
-		x=521
+		x=455
 		y=320
-		width=150
+		width=200
 		height=25
 	}
 	"basic attribute" {
@@ -340,41 +190,11 @@ text {
 	textix="Restart pendant:"
 	align="horiz. right"
 }
-oval {
-	object {
-		x=716
-		y=360
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="$(P)CAPStatus"
-	}
-}
-oval {
-	object {
-		x=741
-		y=360
-		width=25
-		height=25
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="$(P)CAPStatus"
-	}
-}
 text {
 	object {
-		x=521
+		x=455
 		y=360
-		width=150
+		width=200
 		height=25
 	}
 	"basic attribute" {
@@ -482,7 +302,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=200
+		y=230
 		width=150
 		height=25
 	}
@@ -497,7 +317,7 @@ text {
 text {
 	object {
 		x=15
-		y=200
+		y=230
 		width=150
 		height=25
 	}
@@ -509,7 +329,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=240
+		y=270
 		width=150
 		height=25
 	}
@@ -524,7 +344,7 @@ text {
 text {
 	object {
 		x=15
-		y=240
+		y=270
 		width=150
 		height=25
 	}
@@ -536,7 +356,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=280
+		y=310
 		width=150
 		height=25
 	}
@@ -551,7 +371,7 @@ text {
 text {
 	object {
 		x=15
-		y=280
+		y=310
 		width=150
 		height=25
 	}
@@ -563,7 +383,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=320
+		y=350
 		width=150
 		height=25
 	}
@@ -578,7 +398,7 @@ text {
 text {
 	object {
 		x=15
-		y=320
+		y=350
 		width=170
 		height=25
 	}
@@ -590,7 +410,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=360
+		y=390
 		width=150
 		height=25
 	}
@@ -605,7 +425,7 @@ text {
 text {
 	object {
 		x=15
-		y=360
+		y=390
 		width=170
 		height=25
 	}
@@ -617,7 +437,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=400
+		y=430
 		width=150
 		height=25
 	}
@@ -632,7 +452,7 @@ text {
 text {
 	object {
 		x=15
-		y=400
+		y=430
 		width=170
 		height=25
 	}
@@ -644,7 +464,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=440
+		y=500
 		width=150
 		height=25
 	}
@@ -659,7 +479,7 @@ text {
 text {
 	object {
 		x=15
-		y=440
+		y=500
 		width=150
 		height=25
 	}
@@ -671,7 +491,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=480
+		y=540
 		width=150
 		height=25
 	}
@@ -686,7 +506,7 @@ text {
 text {
 	object {
 		x=15
-		y=480
+		y=540
 		width=150
 		height=25
 	}
@@ -698,7 +518,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=520
+		y=580
 		width=150
 		height=25
 	}
@@ -713,7 +533,7 @@ text {
 text {
 	object {
 		x=15
-		y=520
+		y=580
 		width=150
 		height=25
 	}
@@ -725,7 +545,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=560
+		y=620
 		width=150
 		height=25
 	}
@@ -740,7 +560,7 @@ text {
 text {
 	object {
 		x=15
-		y=560
+		y=620
 		width=150
 		height=25
 	}
@@ -752,7 +572,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=600
+		y=660
 		width=150
 		height=25
 	}
@@ -767,7 +587,7 @@ text {
 text {
 	object {
 		x=15
-		y=600
+		y=660
 		width=150
 		height=25
 	}
@@ -779,7 +599,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=640
+		y=700
 		width=150
 		height=25
 	}
@@ -794,7 +614,7 @@ text {
 text {
 	object {
 		x=15
-		y=640
+		y=700
 		width=150
 		height=25
 	}
@@ -806,7 +626,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=680
+		y=770
 		width=150
 		height=25
 	}
@@ -821,7 +641,7 @@ text {
 text {
 	object {
 		x=15
-		y=680
+		y=770
 		width=150
 		height=25
 	}
@@ -833,7 +653,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=720
+		y=810
 		width=150
 		height=25
 	}
@@ -848,7 +668,7 @@ text {
 text {
 	object {
 		x=15
-		y=720
+		y=810
 		width=150
 		height=25
 	}
@@ -860,7 +680,7 @@ text {
 "text entry" {
 	object {
 		x=192
-		y=760
+		y=850
 		width=150
 		height=25
 	}
@@ -875,7 +695,7 @@ text {
 text {
 	object {
 		x=15
-		y=760
+		y=850
 		width=150
 		height=25
 	}
@@ -886,8 +706,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=565
+		x=530
+		y=440
 		width=150
 		height=25
 	}
@@ -901,8 +721,8 @@ text {
 }
 "text update" {
 	object {
-		x=810
-		y=10
+		x=655
+		y=15
 		width=60
 		height=25
 	}
@@ -916,8 +736,8 @@ text {
 }
 text {
 	object {
-		x=375
-		y=565
+		x=405
+		y=440
 		width=110
 		height=25
 	}
@@ -929,8 +749,8 @@ text {
 }
 text {
 	object {
-		x=605
-		y=10
+		x=450
+		y=15
 		width=200
 		height=25
 	}
@@ -942,8 +762,8 @@ text {
 }
 text {
 	object {
-		x=875
-		y=10
+		x=720
+		y=15
 		width=15
 		height=25
 	}
@@ -954,8 +774,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=605
+		x=530
+		y=480
 		width=150
 		height=25
 	}
@@ -969,8 +789,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=635
+		x=530
+		y=510
 		width=150
 		height=25
 	}
@@ -984,8 +804,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=665
+		x=530
+		y=540
 		width=150
 		height=25
 	}
@@ -999,8 +819,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=695
+		x=530
+		y=570
 		width=150
 		height=25
 	}
@@ -1014,8 +834,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=725
+		x=530
+		y=600
 		width=150
 		height=25
 	}
@@ -1029,8 +849,8 @@ text {
 }
 "text update" {
 	object {
-		x=500
-		y=755
+		x=530
+		y=630
 		width=150
 		height=25
 	}
@@ -1044,8 +864,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=605
+		x=475
+		y=480
 		width=40
 		height=25
 	}
@@ -1057,8 +877,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=635
+		x=475
+		y=510
 		width=40
 		height=25
 	}
@@ -1070,8 +890,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=665
+		x=475
+		y=540
 		width=40
 		height=25
 	}
@@ -1083,8 +903,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=695
+		x=475
+		y=570
 		width=40
 		height=25
 	}
@@ -1096,8 +916,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=725
+		x=475
+		y=600
 		width=40
 		height=25
 	}
@@ -1109,8 +929,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=755
+		x=475
+		y=630
 		width=40
 		height=25
 	}
@@ -1122,7 +942,7 @@ text {
 }
 text {
 	object {
-		x=680
+		x=660
 		y=85
 		width=60
 		height=25
@@ -1134,13 +954,13 @@ text {
 		vis="if not zero"
 		chan="$(P)STS"
 	}
-	textix="Okay"
+	textix="Ready"
 }
 text {
 	object {
-		x=680
+		x=660
 		y=85
-		width=60
+		width=120
 		height=25
 	}
 	"basic attribute" {
@@ -1150,11 +970,11 @@ text {
 		vis="if zero"
 		chan="$(P)STS"
 	}
-	textix="Fault"
+	textix="Not Ready"
 }
 text {
 	object {
-		x=680
+		x=660
 		y=125
 		width=60
 		height=25
@@ -1170,7 +990,7 @@ text {
 }
 text {
 	object {
-		x=680
+		x=660
 		y=125
 		width=60
 		height=25
@@ -1186,8 +1006,8 @@ text {
 }
 text {
 	object {
-		x=525
-		y=10
+		x=370
+		y=15
 		width=80
 		height=25
 	}
@@ -1214,4 +1034,364 @@ text {
 	}
 	limits {
 	}
+}
+"text update" {
+	object {
+		x=830
+		y=480
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)X_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=510
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)Y_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=540
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)Z_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=570
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)rX_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=600
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)rY_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=630
+		width=151
+		height=25
+	}
+	monitor {
+		chan="$(P)rZ_CartesianOutput"
+		clr=54
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=770
+		y=480
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="X:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=770
+		y=510
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Y:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=770
+		y=540
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Z:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=770
+		y=570
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="rX:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=770
+		y=600
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="rY:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=770
+		y=630
+		width=40
+		height=25
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="rZ:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=660
+		y=200
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)ES"
+	}
+	textix="E-Stopped"
+}
+text {
+	object {
+		x=660
+		y=200
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)ES"
+	}
+	textix="Okay"
+}
+text {
+	object {
+		x=660
+		y=240
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)CS"
+	}
+	textix="Collision"
+}
+text {
+	object {
+		x=660
+		y=240
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)CS"
+	}
+	textix="Okay"
+}
+text {
+	object {
+		x=660
+		y=160
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RE"
+	}
+	textix="Okay"
+}
+text {
+	object {
+		x=660
+		y=160
+		width=150
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RE"
+	}
+	textix="Out of Range"
+}
+text {
+	object {
+		x=660
+		y=280
+		width=75
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)HD"
+	}
+	textix="Closed"
+}
+text {
+	object {
+		x=660
+		y=280
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)HD"
+	}
+	textix="Open"
+}
+text {
+	object {
+		x=660
+		y=320
+		width=200
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)RS"
+	}
+	textix="Restart Required"
+}
+text {
+	object {
+		x=660
+		y=320
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)RS"
+	}
+	textix="Okay"
+}
+text {
+	object {
+		x=660
+		y=360
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(P)CAPStatus"
+	}
+	textix="Enabled"
+}
+text {
+	object {
+		x=660
+		y=360
+		width=60
+		height=25
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="$(P)CAPStatus"
+	}
+	textix="Disabled"
 }
