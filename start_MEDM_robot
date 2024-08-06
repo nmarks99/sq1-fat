@@ -2,12 +2,12 @@
 
 ##################################################
 
-export EPICS_APP_UI_DIR="sq1App/op/adl"
-export UI_FILE="${EPICS_APP_UI_DIR}/sq1_robot.adl"
-export UI_FILE_MACROS=${2:-"P=sq1:,P1=26IDRobot:"}
+export UI_DIR="sq1App/op/adl"
+export UI_FILE="${UI_DIR}/sq1_robot.adl"
+export UI_FILE_MACROS="P=26IDRobot:"
 
-export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${EPICS_APP_UI_DIR}
-export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${EPICS_APP_UI_DIR}/autoconvert
+export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${UI_DIR}
+export EPICS_DISPLAY_PATH=${EPICS_DISPLAY_PATH}:${UI_DIR}/autoconvert
 
 # Start medm
 medm -macro ${UI_FILE_MACROS} -x ${UI_FILE} &
